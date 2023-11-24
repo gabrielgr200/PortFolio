@@ -1,0 +1,13 @@
+@media (width <= 720px) {
+    section {
+        padding: 30px 10%;
+    }
+}
+
+@media (width <= 620px) {
+    .banner {
+        text-align: center;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+}

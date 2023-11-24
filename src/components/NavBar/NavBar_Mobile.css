@@ -1,0 +1,26 @@
+@media screen and (max-width: 560px) {
+    .navigation.active {
+        width: 500px;
+    }
+
+    .navigation .li {
+        position: relative;
+        left: 64px;
+    }
+    
+    .navigation .li li a {
+        padding-left: 0px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .navigation.active {
+        width: 360px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .navigation.active {
+        width: 260px;
+    }
+}

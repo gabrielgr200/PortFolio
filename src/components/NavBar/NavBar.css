@@ -1,0 +1,112 @@
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40vh;
+}
+
+.navigation {
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 60px;
+    transition: 0.5s ease-out;
+    position: relative;
+    transition-delay: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+}
+
+.navigation.active {
+    width: 600px;
+}
+
+.navigation .toggleMenu {
+    height: 60px;
+    width: 60px;
+    background: #426e6e;
+    border-radius: 50%;
+    position: absolute;
+    transition: 0.5s ease-out;
+    transition-delay: 0.5s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation.active .toggleMenu {
+    transition-delay: 0s;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+}
+
+.navigation .toggleMenu::before {
+    content: '';
+    width: 30px;
+    position: absolute;
+    height: 3px;
+    border-radius: 3px;
+    transform: translateY(-5px);
+    transition: 0.5s ease-out;
+    background: #fff;
+    transition-delay: 0.5s;
+}
+
+.navigation .toggleMenu::after {
+    content: '';
+    width: 30px;
+    position: absolute;
+    height: 3px;
+    border-radius: 3px;
+    transform: translateY(5px);
+    transition: 0.5s ease-out;
+    background: #fff;
+    transition-delay: 0.5s;
+}
+
+.navigation.active .toggleMenu::before {
+    transition-delay: 0s;
+    transform: translateY(0px) rotate(45deg) scale(0.6);
+}
+
+.navigation.active .toggleMenu::after {
+    transition-delay: 0s;
+    transform: translateY(0px) rotate(315deg) scale(0.6);
+}
+
+.navigation .li {
+    position: relative;
+    left: 136px;
+    display: flex;
+    transition: 0.5s ease-out;
+    transform: scale(0);
+}
+
+.navigation.active .li {
+    transition-delay: 0.75s;
+    transform: scale(1);
+}
+
+.navigation .li li {
+    list-style: none;
+    padding-left: 10px;
+}
+
+.navigation .li li a {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+    padding-left: 15px;
+    transition: 0.5s ease-out;
+}
+
+.navigation .li li a:hover {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: underline;
+}
