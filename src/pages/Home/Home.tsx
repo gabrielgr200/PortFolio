@@ -3,6 +3,9 @@ import NavBar from '../../components/NavBar/NavBar'
 import './Home.css'
 import './Home_Mobile.css'
 import Person from '../../img/G.svg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import SlideCard from '../../components/SlideCard/SlideCard'
 
 
 const Home: React.FC = () => {
@@ -14,10 +17,24 @@ const Home: React.FC = () => {
                 <div>
                     <h2>Gabriel Gomes</h2>
                     <h3>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, maiores!
+                        Um Desenvolvedor Full Stack com ideias incríveis para sites e
+                        aplicativos.
+
+                        <div className="links">
+                            <div className="icone">
+                                <a href="https://github.com/gabrielgr200">
+                                    <FontAwesomeIcon icon={faGithub} /> Github
+                                </a>
+                            </div>
+                            <div className="icone">
+                                <a href="https://www.linkedin.com/in/gabriel-gomes-bba609179/">
+                                    <FontAwesomeIcon icon={faLinkedin} /> Linkedin
+                                </a>
+                            </div>
+                        </div>
                     </h3>
                 </div>
-                <img src={Person} />
+                <img src={Person} alt='imagem da logo' />
             </section>
             <section className='teste'>
                 <h2>Sobre mim</h2>
@@ -61,8 +78,9 @@ const Home: React.FC = () => {
                             <div className="icon">1</div>
                             <div className="description">
                                 <h4>Site lexicorm</h4>
-                                <p>Winter has so much to offer -
-                                    creative activities</p>
+                                <p>Feito para tornar a pesquisa por medicamentos mais prática.
+                                    <a href="https://lexicorm.vercel.app/" className='lexi'>Visitar site</a>
+                                </p>
                             </div>
                         </div>
                     </label>
@@ -72,8 +90,10 @@ const Home: React.FC = () => {
                             <div className="icon">2</div>
                             <div className="description">
                                 <h4>ggcoffee</h4>
-                                <p>Gets better every day -
-                                    stay tuned</p>
+                                <p>Oferecemos os melhores cafés da região em nosso site.
+                                    <a href="https://ggcoffee.vercel.app/"
+                                        className='cafe'>Visitar site</a>
+                                </p>
                             </div>
                         </div>
                     </label>
@@ -83,7 +103,12 @@ const Home: React.FC = () => {
                             <div className="icon">3</div>
                             <div className="description">
                                 <h4>Clone Apple</h4>
-                                <p>Help people all over the world</p>
+                                <p className='apple'>
+                                    Site com o intuito de
+                                    estudar, baseado no site da Apple.
+                                    <a href="https://apple-ashy.vercel.app/"
+                                        className='maca'>Visitar site</a>
+                                </p>
                             </div>
                         </div>
                     </label>
@@ -100,6 +125,15 @@ const Home: React.FC = () => {
                     </label>
                 </div>
             </div>
+
+
+            <section className='certificado'>
+                <SlideCard/>
+            </section>
+
+            <section className='contato'>
+                <h2>Contatos</h2>
+            </section>
         </>
     )
 }

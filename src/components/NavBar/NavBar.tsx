@@ -13,10 +13,10 @@ const NavBar: React.FC = () => {
         <section className='body'>
             <ul className={`navigation ${isActive ? 'active' : ''}`}>
                 <li className='li'>
-                    <li><a href="/Home">Home</a></li>
-                    <li><a href="/Home">About</a></li>
-                    <li><a href="/Home">Project</a></li>
-                    <li><a href="/Home">Contact</a></li>
+                    <li><a href="/Home">Início</a></li>
+                    <li><a href="/Home">Sobre mim</a></li>
+                    <li><a href="/Home">Projetos</a></li>
+                    <li><a href="/Home">Contatos</a></li>
                 </li>
                 <span className="toggleMenu" onClick={toggleMenu}></span>
             </ul>

@@ -81,7 +81,7 @@
 
 .navigation .li {
     position: relative;
-    left: 136px;
+    left: 120px;
     display: flex;
     transition: 0.5s ease-out;
     transform: scale(0);

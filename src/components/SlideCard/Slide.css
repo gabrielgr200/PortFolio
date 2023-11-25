@@ -1,0 +1,47 @@
+.carousel {
+    padding: 5rem;
+    color: #fff;
+    width: 100wh;
+    height: 60vh;
+}
+
+.carousel h2 {
+    color: #000;
+    bottom: 70px;
+    position: relative;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 30px;
+    letter-spacing: 0.3rem;
+}
+
+.carousel .box {
+    height: 200px;
+    border-radius: 30px;
+    background-color: #2f4f4f;
+}
+
+.carousel .box img {
+    position: relative;
+    left: 26px;
+    top: 40px;
+    width: 100px;
+    height: 90px;
+}
+
+.carousel .box h3 {
+    top: 70px;
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.slick-slide div {
+    margin: 0 1rem;
+}
+
+.slick-dots li button::before {
+    color: #fff !important;
+    font-size: 1rem !important;
+    top: 2rem !important;
+}
